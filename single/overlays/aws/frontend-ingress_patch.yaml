@@ -1,6 +1,6 @@
 spec:
   rules:
-    - host: app.devops-ninja.ml
+    - host: app.teles.ninja
       http:
         paths:
           - backend:

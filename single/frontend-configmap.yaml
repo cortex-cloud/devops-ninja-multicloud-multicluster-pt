@@ -6,5 +6,5 @@ metadata:
 
 data:
   api.js: |
-    var api  = "https://api.dev-ops-ninja.com";
+    var api  = "https://api.teles.ninja";
     var path = "/book";

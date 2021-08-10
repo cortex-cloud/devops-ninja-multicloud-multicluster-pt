@@ -17,7 +17,8 @@ configurar o dns
 # 1 - Configuração do Cluster Kubernetes
 ```sh
 # Creating a managed instance group
-$ gcloud compute instance-templates create multicloud \
+$ 
+gcloud compute instance-templates create multicloud \
    --region=us-east1 \
    --network=default \
    --boot-disk-size=60GB \
@@ -26,10 +27,12 @@ $ gcloud compute instance-templates create multicloud \
    --image-family=debian-9 \
    --image-project=debian-cloud \
    --machine-type=e2-medium \
-   --metadata-from-file startup-script=install-k8s2.sh
+   --metadata-from-file startup-script=install.sh
 
 # Create the managed instance group based on the template.
-$ gcloud compute instance-groups managed create multicloud-backend \
+$ 
+
+gcloud compute instance-groups managed create multicloud-backend \
    --template=multicloud --size=3 --zone=us-east1-b
 
 # Adding a named port to the instance group
